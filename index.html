@@ -4,61 +4,63 @@
 <meta charset="UTF-8">
 <title>Vietnamese Hangman</title>
 <style>
-body{
-    font-family: Arial;
-    text-align:center;
-    background:#f5f5f5;
+
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #f5f5f5;
+    margin: 0;
+    padding: 0;
 }
 
-/* Welcome screen */
+/* Welcome screen (keep it big!) */
 #startScreen h1 {
-    font-size: 80px;       /* large title */
+    font-size: 80px;
     margin-bottom: 40px;
 }
 
 #startScreen button {
-    font-size: 40px;        /* large play button */
+    font-size: 40px;
     padding: 20px 40px;
     border-radius: 15px;
     cursor: pointer;
 }
 
-#word{
-    font-size:80px;
-    letter-spacing:16px;
-    margin: 40px 0;
+/* Main game screen (slightly smaller to fit screens) */
+#gameScreen #hangman {
+    font-family: monospace;
+    font-size: 40px;       /* reduced from 50px */
+    margin-bottom: 30px;
+}
+
+#gameScreen #word {
+    font-size: 60px;       /* reduced from 80px */
+    letter-spacing: 12px;  /* slightly less spacing */
+    margin: 30px 0;
     white-space: pre;
 }
 
-/* Letter buttons */
-#letters button {
-    font-size: 32px;        /* big letters */
-    padding: 20px 30px;
-    margin: 6px;
-    border-radius: 12px;
+#gameScreen #letters button {
+    font-size: 28px;       /* smaller buttons */
+    padding: 15px 25px;
+    margin: 5px;
+    border-radius: 10px;
     cursor: pointer;
 }
 
-/* Listen / Next buttons */
-.controls button {
-    font-size: 36px;        /* large control buttons */
-    padding: 20px 40px;
-    margin: 20px 10px;
-    border-radius: 12px;
+#gameScreen .controls button {
+    font-size: 32px;       /* slightly smaller than before */
+    padding: 15px 30px;
+    margin: 15px 8px;
+    border-radius: 10px;
     cursor: pointer;
 }
 
-/* Message display */
-#message {
-    margin-top: 40px;
-    font-size: 50px;
+#gameScreen #message {
+    margin-top: 30px;
+    font-size: 40px;       /* slightly smaller message */
     font-weight: bold;
-}
-
-#hangman{
-    font-family: monospace;
-    font-size:50px;
-    margin-bottom:40px;
 }
 
 .controls{
@@ -89,5 +91,6 @@ body{
 <script src="script.js"></script>
 </body>
 </html>
+
 
 
