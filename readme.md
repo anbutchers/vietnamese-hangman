@@ -50,11 +50,6 @@ cd vietnamese-hangman
 
 > No server required — it’s a static website
 
-## Deploy Online
-
-- **GitHub Pages**: Push your repo → Settings → Pages → select `main` branch
-- **Netlify** or **Cloudflare Pages** also work
-
 ## Technologies Used
 
 - HTML5, CSS3
