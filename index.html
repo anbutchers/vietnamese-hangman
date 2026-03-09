@@ -10,29 +10,55 @@ body{
     background:#f5f5f5;
 }
 
+/* Welcome screen */
+#startScreen h1 {
+    font-size: 80px;       /* large title */
+    margin-bottom: 40px;
+}
+
+#startScreen button {
+    font-size: 40px;        /* large play button */
+    padding: 20px 40px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
 #word{
-    font-size:60px;
-    letter-spacing:12px;
-    margin:20px;
+    font-size:80px;
+    letter-spacing:16px;
+    margin: 40px 0;
     white-space: pre;
 }
 
-#letters button{
-    margin:5px;
-    padding:15px;
-    font-size:24px;
+/* Letter buttons */
+#letters button {
+    font-size: 32px;        /* big letters */
+    padding: 20px 30px;
+    margin: 6px;
+    border-radius: 12px;
+    cursor: pointer;
 }
 
-#message{
-    margin-top:20px;
-    font-size:30px;
-    font-weight:bold;
+/* Listen / Next buttons */
+.controls button {
+    font-size: 36px;        /* large control buttons */
+    padding: 20px 40px;
+    margin: 20px 10px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+/* Message display */
+#message {
+    margin-top: 40px;
+    font-size: 50px;
+    font-weight: bold;
 }
 
 #hangman{
     font-family: monospace;
-    font-size:30px;
-    margin-bottom:20px;
+    font-size:50px;
+    margin-bottom:40px;
 }
 
 .controls{
@@ -63,4 +89,5 @@ body{
 <script src="script.js"></script>
 </body>
 </html>
+
 
